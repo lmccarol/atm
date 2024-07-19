@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" spacing="10.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.TransactionController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" text="Select Transaction" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="25.0" top="25.0" />
+         </VBox.margin>
+      </Label>
+      <Button fx:id="DepositBtn" mnemonicParsing="false" onAction="#depositBtnClicked" text="Deposit">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="WithdrawalBtn" mnemonicParsing="false" onAction="#withdrawalBtnClicked" text="Withdrawal">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="TransferBtn" mnemonicParsing="false" onAction="#transferBtnClicked" text="Transfer">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="BillPaymentBtn" mnemonicParsing="false" onAction="#billPaymentBtnClicked" text="Bill Payment">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="AccountBalance" mnemonicParsing="false" onAction="#accountBalanceClicked" text="Account Balance">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+   </children>
+</VBox>
